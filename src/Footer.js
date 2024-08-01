@@ -1,9 +1,11 @@
 function Footer() {
     return(
         <footer>
-            <img src="images/Mario and Adrian A.jpg" width="200" alt="Footer Logo"/>
-            <div>
-                <p>Doormat Navigation</p>
+            <div className="footerLogo">
+                <img src="./images/footer-logo.png" width="auto" alt="Footer Logo"/>
+            </div>
+            <div className="footerNav">
+                <div className="footerTop"><p>Doormat <br/>Navigation</p></div>
                 <nav>
                     <ul>
                         <li><a href="/home">HOME</a></li>
@@ -15,20 +17,20 @@ function Footer() {
                     </ul>
                 </nav>
             </div>
-            <div>
-                <p>Contact</p>
+            <div className="contact">
+                <div className="footerTop"><p>Contact</p></div>
                 <ul>
                     <li>Address</li>
                     <li>Phone Number</li>
                     <li>Email</li>
                 </ul>
             </div>
-            <div>
-                <p>Social Media Links</p>
+            <div className="socialMedia">
+                <div className="footerTop"><p>Social Media Links</p></div>
                 <ul>
-                    <li><a>Instagram</a></li>
-                    <li><a>Facebook</a></li>
-                    <li><a>YouTube</a></li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
                 </ul>
             </div>
         </footer>
