@@ -119,6 +119,10 @@ p, footer li {
   gap: 0px 20px;
 }
 
+.wrapper {
+  grid-column: 3 / 11;
+}
+
 /* header */
 
 header {
@@ -228,7 +232,11 @@ main {
   width: 16px;
 }
 
+/* About */
 
+About h1 {
+  grid-column: 3 / 5;
+}
 
 /* footer */
 

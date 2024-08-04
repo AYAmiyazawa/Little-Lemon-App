@@ -1,13 +1,15 @@
+import {Link} from "react-router-dom";
+
 function Nav() {
     return(
-        <nav id="nav">
+         <nav id="nav">
             <ul className="flex">
-                <li><a href="/home">HOME</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/menu">MENU</a></li>
-                <li><a href="/reservations">RESERVATIONS</a></li>
-                <li><a href="/order">ORDER ONLINE</a></li>
-                <li><a href="/login">LOGIN</a></li>
+                <Link to="/" className="nav-item">HOME</Link>
+                <Link to="/about" className="nav-item">ABOUT</Link>
+                <Link to="/menu" className="nav-item">MENU</Link>
+                <Link to="/reservations" className="nav-item">RESERVATIONS</Link>
+                <Link to="/order" className="nav-item">ORDER ONLINE</Link>
+                <Link to="/login" className="nav-item">LOGIN</Link>
             </ul>
         </nav>
     );
