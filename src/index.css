@@ -72,13 +72,13 @@ p, footer li {
   color:#333333
 }
 
-#nav ul {
+nav ul {
   font-size: 16px;
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  color: #333333;
+  color: pink;;
 }
 
 .cta {
@@ -121,26 +121,82 @@ p, footer li {
 
 .wrapper {
   grid-column: 3 / 11;
+  margin-top: -15%;
+  margin-bottom: 50px;
 }
 
-/* header */
+/* nav */
 
-header {
-  grid-column: 3 / 5;
+nav {
+  grid-column: 3 / 11;
+  height: 100px;
 }
 
-header img {
+#logo {
+  width: 200px;
+}
+
+#logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-#nav {
-  grid-column: 5 / 11;
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
 
-#nav ul {
-  height: 100px;
+.bar {
+  height: 6px;
+  width: 35px;
+  background-color: #333333;
+  margin: 4px;
+}
+
+nav .flex {
+  gap: 20px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+/* header */
+
+header {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: subgrid;
+  background-color: #495E57;
+  margin: 0 -70px 10% -70px;
+  height: 70%;
+}
+
+#heroSection {
+  grid-column: 3 / 11;
+  padding: 30px 0;
+}
+
+#heroContent {
+  margin-top: -15%;
+}
+
+#heroContent .cta {
+  color: #EDEFEE;
+  margin: 30px 0;
+  max-width: 280px;
+}
+
+header .image {
+  width: 45%;
+}
+
+header .image img {
+  height: 100%;
+  border-radius: 16px;
 }
 
 /* main */
@@ -149,39 +205,6 @@ main {
   grid-column: 1 / 13;
   display: grid;
   grid-template-columns: subgrid;
-}
-
-#heroSection {
-  grid-column: 1 / 13;
-  display: grid;
-  grid-template-columns: subgrid;
-  background-color: #495E57;
-  max-height: 400px;
-  min-height: 350px;
-  margin: 0 -70px 10% -70px;
-  padding-top: 50px;
-}
-
-#heroContent {
-  grid-column: 3 / 7;
-}
-
-#heroContent .cta {
-  color: #EDEFEE;
-  margin: 30px 0;
-  width: 70%;
-  min-width: 280px;
-}
-
-#heroSection .image {
-  grid-column: 7 / 11;
-}
-
-#heroSection .image img {
-  width: 90%;
-  height: 80%;
-  border-radius: 16px;
-  margin-left: 10%;
 }
 
 /* week special */
@@ -270,5 +293,39 @@ footer .leadText {
 
 #contact ul, #socialMedia ul {
   margin-top: 38px;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #333333;
+    transition: all 0.3s ease-in-out;
+    height: 350px
+  }
+
+  .visible a {
+    color: #EDEFEE;
+  }
+
+  .visible li {
+    padding: 10px;;
+  }
+
 }
 
