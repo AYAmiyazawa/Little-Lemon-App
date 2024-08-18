@@ -13,7 +13,7 @@ function Header() {
                     </button>
                 </div>
                 <div className="image">
-                    <img src="./images/restauranfood.jpg" alt="image of restaurant food" />
+                    <img src="./images/restauranfood.jpg" alt="restaurant food" />
                 </div>
             </div>
         </header>
